@@ -63,4 +63,18 @@
     XCTAssertEqual(matchCount, 1, @"Should have matched at least 1");
 }
 
+- (void)testTestFramework
+{
+    NSString *string1 = @"test";
+    NSString *string2 = @"test";
+    XCTAssertEqual(string1,
+                         string2,
+                         @"FAILURE");
+    
+    NSUInteger uint_1 = 4;
+    NSUInteger uint_2 = 4;
+    XCTAssertEqual(uint_1,
+                   uint_2,
+                   @"FAILURE");
+}
 @end
